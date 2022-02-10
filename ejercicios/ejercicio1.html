@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Descricion del ejercicio
+Álvaro quiere modificar el contenido del siguiente HTML usando JavaScript, quiere alterar 
+y poder utilizar su nombre.
+
+<p id="nombre">Mi nombre es Pedro</p>
+
+ÉL conoce la propiedad innerHTML, y sabe que a través de ella puede modificar el HTML 
+interno de un elemento, por lo tanto, creó el siguiente código:
+
+var nombre = document.querySelector("#nombre").innerHTML;
+nombre = "Mi nombre es Álvaro";
+
+Luego de probar, Álvaro se percató de que su código no funcionaba. Si tuvieras que ayudarlo, 
+¿qué le sugerirías?
+
+Solucion
+-->
+
+<body>
+    <p id="nombre">Mi nombre es Pedro</p>
+</body>
+
+<script>
+    var nombre = document.querySelector("#nombre");
+    nombre.innerHTML = "Mi nombre es Álvaro";
+</script>
+
+</html>
