@@ -14,14 +14,19 @@ botonAdicionar.addEventListener("click", function (event) {
         return;
     }
 
-    //Validar paciente
-    var tabla = document.querySelector("#tabla-pacientes");
-    tabla.appendChild(pacienteTr);
+    adicionarPacienteEnlaTabla(paciente);
     form.reset();
 
     var mensajesErrores = document.querySelector("#mensajes-errores");
     mensajesErrores.innerHTML = "";
 });
+
+function adicionarPacienteEnlaTabla(paciente) {
+    var pacienteTr = construirTr(paciente);
+        //Validar paciente
+        var tabla = document.querySelector("#tabla-pacientes");
+        tabla.appendChild(pacienteTr);
+}
 
 function capturarDatosPaciente(form) {
     //Capturando los datos del formulario
